@@ -1,0 +1,11 @@
+// perkondisian if
+@mixin profile-picture($size, $circle: false) {
+    width: $size;
+    height: $size;
+    border: 5px solid white;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .7);
+
+    @if $circle {
+        border-radius: 50%;
+    }
+}

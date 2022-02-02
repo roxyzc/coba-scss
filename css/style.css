@@ -1,0 +1,15 @@
+.container .circle {
+  width: 200px;
+  height: 200px;
+  border: 5px solid white;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+}
+.container .square {
+  width: 200px;
+  height: 200px;
+  border: 5px solid white;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,11 @@
+@use 'mixin';
+
+.container {
+    .circle {
+        @include mixin.profile-picture(200px, true);
+    }
+
+    .square {
+        @include mixin.profile-picture(200px, false);
+    }
+}

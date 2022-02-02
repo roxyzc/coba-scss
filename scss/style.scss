@@ -1,5 +1,11 @@
 @use 'mixin';
 
+body {
+    width: 100vh;
+    height: 1000px;
+    @include mixin.color-mode(false);
+}
+
 .container {
     .circle {
         @include mixin.profile-picture(200px, true);
@@ -7,5 +13,26 @@
 
     .square {
         @include mixin.profile-picture(200px, false);
+    }
+
+    .right {
+        @include mixin.triangle(1rem, red, bawah);
+    }
+
+    .gradient ul {
+        margin: 5px 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+        }
+
+        @for $i from 1 to 6 {
+            li:nth-child(#{$i}) {
+                padding: 4px;
+                color: black;
+                background-color: lighten($color: salmon, $amount: $i * 2%);
+            }
+        }
     }
 }

@@ -1,3 +1,10 @@
+body {
+  width: 100vh;
+  height: 1000px;
+  background-color: #222;
+  color: #ddd;
+}
+
 .container .circle {
   width: 200px;
   height: 200px;
@@ -10,6 +17,47 @@
   height: 200px;
   border: 5px solid white;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+.container .right {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 1rem;
+  border-bottom-color: red;
+}
+.container .gradient ul {
+  margin: 5px 0;
+  padding: 0;
+}
+.container .gradient ul li {
+  list-style: none;
+}
+.container .gradient ul li:nth-child(1) {
+  padding: 4px;
+  color: black;
+  background-color: #fa897c;
+}
+.container .gradient ul li:nth-child(2) {
+  padding: 4px;
+  color: black;
+  background-color: #fb9286;
+}
+.container .gradient ul li:nth-child(3) {
+  padding: 4px;
+  color: black;
+  background-color: #fb9b90;
+}
+.container .gradient ul li:nth-child(4) {
+  padding: 4px;
+  color: black;
+  background-color: #fba399;
+}
+.container .gradient ul li:nth-child(5) {
+  padding: 4px;
+  color: black;
+  background-color: #fcaca3;
 }
 
 /*# sourceMappingURL=style.css.map */

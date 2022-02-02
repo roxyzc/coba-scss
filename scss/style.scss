@@ -35,4 +35,20 @@ body {
             }
         }
     }
+
+    $colorS: (youtube: #ff0000,
+        facebook: #3b5998);
+
+    .socials {
+        font-size: 2rem;
+        font-family: serif;
+        font-weight: bold;
+
+        @each $social,
+        $color in $colorS {
+            .#{$social} {
+                color: $color;
+            }
+        }
+    }
 }
